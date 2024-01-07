@@ -6,7 +6,7 @@
 
 #### `.filter()` and `.test()` methods
 
-On [This Codewars Kata](https://www.codewars.com/kata/583203e6eb35d7980400002a/train/javascript) I learned:
+1. On [This Codewars Kata](https://www.codewars.com/kata/583203e6eb35d7980400002a/train/javascript) I learned:
 
 - The `.filter()` method is a way to be able to select a series of specific array items
 - The `.test()` method is used specifically for **strings**. You need to pass the filter output (using your REGEX function) into the test with the parameters of the call-back function or you won't be able to test for the strings. It's output is true / false boolean type and it will be applied to each instance of the array. ChatGPT had a really nice description of this:
@@ -46,3 +46,11 @@ For the code: ``
 > The original arr is not mutated; rather, the .filter() method creates a new array based on the condition specified (/^[:;][-~]?[)D]$/) without changing the original array.
 >
 > So, .test() doesn't mutate the original array; instead, it filters the elements of the array and then .length calculates the number of elements that passed the test (matched the pattern) in the new array created by .filter().
+
+2. I did another really interesting [codewars Kata](https://www.codewars.com/kata/523f5d21c841566fde000009/solutions/javascript) that compared two arrays to each other and asked to remove any values found in the second array from the first array. I was able to use the `.filter()` method along with the `.includes()` method to search for all of the values that matched inside the arrays.
+
+### String Methods
+
+#### `.replace()`
+
+The `.replace()` method allows you to search a particular string for a regex or other combination of search terms and then can provide a callback function that allows you to mutate or change the particular replaced value. It was really powerful in this example here: [Codewars Kata](https://www.codewars.com/kata/5208f99aee097e6552000148/solutions/javascript).

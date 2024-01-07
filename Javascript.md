@@ -21,7 +21,7 @@ For the code: ``
 >
 > Let's break it down:
 >
-> .filter(x => /^[:;][-~]?[)D]$/.test(x)) applies the regex pattern ^[:;][-~]?[)D]$ to each element (x) in the array (arr). It returns a new array containing only those elements that match the pattern.
+> `.filter(x => /^[:;][-~]?[)D]$/.test(x))` applies the regex pattern `^[:;][-~]?[)D]$` to each element (x) in the array (arr). It returns a new array containing only those elements that match the pattern.
 > .length is then applied to this filtered array, giving the count of elements that matched the pattern.
 > .test() returns true or false, but when used within .filter(), it works to filter the elements of the array based on whether the regex pattern matches each individual element. The resulting array contains only those elements that match the pattern, and .length gives the count of those matching elements.
 >
